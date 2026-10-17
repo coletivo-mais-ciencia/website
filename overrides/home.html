@@ -1,0 +1,42 @@
+{% extends "main.html" %}
+{% block tabs %}
+{{ super() }}
+<section class="cmc-hero">
+  <img class="cmc-hero__deco" src="{{ 'assets/simbolo_branco.svg' | url }}" alt="">
+  <div class="cmc-hero__inner md-typeset">
+    <img class="cmc-hero__logo" src="{{ 'assets/horizontal_negativo_cor.svg' | url }}" alt="Coletivo Mais Ciência">
+    <h1>Ciência feita no Brasil, por quem voltou para fazer.</h1>
+    <p>Somos pesquisadoras e pesquisadores do Programa Conhecimento Brasil, de diferentes áreas e regiões do país, em defesa da ciência, da educação e das políticas públicas.</p>
+    <a href="{{ 'posicionamentos/manifesto-2026/' | url }}" class="md-button md-button--primary">Leia o manifesto</a>
+    <a href="{{ 'faca-parte/' | url }}" class="md-button md-button--outline">Faça parte</a>
+  </div>
+</section>
+{% endblock %}
+{% block content %}
+<section class="cmc-sec md-typeset">
+  <div class="cmc-kicker">Quem somos</div>
+  <h2>Uma rede de pesquisadores repatriados</h2>
+  <p>O Programa Conhecimento Brasil foi criado para atrair e fixar no país pesquisadores brasileiros que estavam no exterior. Voltamos para pesquisar e formar novos cientistas aqui. Juntos, queremos construir uma articulação permanente para que esse esforço tenha futuro.</p>
+  <div class="cmc-cards">
+    <div class="cmc-card" style="--c: var(--cmc-verde)"><div class="cmc-card__dot"></div><h3>Ciência</h3><p>Financiamento estável, pesquisa básica e aplicada, e condições para que cientistas fiquem e trabalhem no Brasil.</p></div>
+    <div class="cmc-card" style="--c: var(--cmc-amarelo)"><div class="cmc-card__dot"></div><h3>Educação</h3><p>Universidades públicas fortes e formação de novos pesquisadores em todas as regiões e áreas do conhecimento.</p></div>
+    <div class="cmc-card" style="--c: var(--cmc-azul)"><div class="cmc-card__dot"></div><h3>Políticas públicas</h3><p>Conhecimento científico a serviço das decisões que afetam a vida das pessoas.</p></div>
+  </div>
+</section>
+<section class="cmc-band"><div class="cmc-sec md-typeset">
+  <div class="cmc-kicker">Posicionamentos</div>
+  <p class="cmc-quote">“A ciência é apartidária e serve a todos […]. Mas nós, cientistas brasileiros, não podemos fechar os olhos […].”</p>
+  <a href="{{ 'posicionamentos/' | url }}" class="md-button md-button--primary" style="background:var(--cmc-roxo);border-color:var(--cmc-roxo);color:#fff">Ver todos os posicionamentos</a>
+</div></section>
+<section class="cmc-sec md-typeset">
+  <div class="cmc-cards" style="margin-top:0">
+    <a class="cmc-card" style="--c: var(--cmc-coral)" href="{{ 'conhecimento-brasil/' | url }}"><h3>O Conhecimento Brasil →</h3><p>O que é o programa e por que a fixação de pesquisadores importa.</p></a>
+    <a class="cmc-card" style="--c: var(--cmc-verde)" href="https://www.instagram.com/coletivo_mais_ciencia/"><h3>Nossa produção →</h3><p>Artigos, entrevistas e eventos dos integrantes no nosso Instagram.</p></a>
+    <a class="cmc-card" style="--c: var(--cmc-amarelo)" href="{{ 'imprensa/' | url }}"><h3>Imprensa →</h3><p>Kit de marca, contato e pesquisadores por área.</p></a>
+  </div>
+  <div class="cmc-cta" style="margin-top:3rem">
+    <div><h2>Você coordena um projeto do Conhecimento Brasil?</h2><p>Venha construir o coletivo com a gente.</p></div>
+    <a href="{{ 'faca-parte/' | url }}" class="md-button md-button--primary">Faça parte</a>
+  </div>
+</section>
+{% endblock %}
