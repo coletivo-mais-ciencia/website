@@ -3,7 +3,7 @@ hide:
   - navigation
 ---
 
-<span class="kicker">Posicionamento · 9 de outubro de 2026</span>
+<span class="kicker">Posicionamento · 11 de outubro de 2026</span>
 
 # Manifesto de cientistas repatriados em favor da eleição de Lula
 
